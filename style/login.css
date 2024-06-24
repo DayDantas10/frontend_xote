@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:"wdth" 100;
+    font-display: fallback;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(252, 212, 153);
+}
+
+
+.content{
+    border-radius: 15px;
+    background-color:#fff;
+    width: 960px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+}
+.content::before{
+    content: "";
+    position:absolute;
+    background-color: #C59855;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+   
+    left: 0;
+}
+.first-content .second-column{
+    z-index: 11;
+}
+.first-content{
+    display: flex;
+}
+.second-content{
+    display: flex;
+    position: absolute;
+}
+
+
+.title{
+    font-size:28px;
+    font-weight: bold;
+   
+   
+}
+
+
+.title-primary{
+    color: black;
+}
+
+
+.title-second{
+    color:#C59855;
+   
+}
+.descripition{
+    font-size: 14px;
+    font-weight: 300;
+    color :black;
+    line-height:30px;
+}
+.description-primary{
+    color:  black;
+}
+.description-second{
+    color: #795114;
+}
+
+
+
+
+.btn{
+    border-radius:15px;
+    text-transform: uppercase;
+    color: black;
+    font-size:10px;
+    padding:10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width:150px;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+
+.btn-primary{
+    background-color: transparent;
+    border: 1px solid  black;
+    transition: background-color 1s;
+}
+.btn-primary:hover{
+    background-color: black;
+    color:#C59855;
+}
+.btn-second{
+    background-color: #C59855;
+    border: 1px solid #C59855;
+    transition: background-color 1s;
+}
+.btn-second:hover{
+    background-color: black;
+    color:#C59855;
+}
+.first-column{
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+
+.second-column{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*.social-media{
+margin: 1rem 0;
+}
+.link-social-media{
+    border-radius: 50%;
+}
+.list-social-media{
+    display: flex;
+    list-style-type: none;
+}
+.item-social-media{
+    color:#95a5a6;
+}
+.link-social-media:not(:first-child){
+    margin-left:12px;
+}
+.link-social-media:hover .item-social-media{
+    background-color: #C59855;
+    color: #fff;
+    border: #C59855;
+}*/
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+
+
+}
+.form2{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.form input{
+    height: 45px;
+    width: 100%;
+    border:none;
+    background-color: #ecf0f1;
+}
+
+
+.label-input{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin:7px;
+}
+.icon-modify{
+    color: #C59855;
+    padding: 0 6px;
+}
+.password{
+    color: #C59855;
+    font-size: 14px;
+    margin: 15px;
+    text-align: center;
+}
+.second-content .first-column{
+    order: 2;
+   z-index: -1;
+}
+.second-content .second-column{
+    order: 1;
+  z-index: -1;
+}
+
+
+.entrar-JS .first-content .first-column{
+    z-index: -1;
+}
+.entrar-JS .first-content .second-column{
+    z-index: -1;
+    position: relative;
+    /*animation: deslocamentoesq 1.3s;*/
+
+
+}
+.entrar-JS .second-content .first-column{
+z-index: 13;
+}
+.entrar-JS .second-content .second-column{
+    z-index: 11;
+}
+.entrar-JS .content::before{
+    left: 60%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+   /* animation: slidein 1.3s;*/
+    z-index: 12;
+
+
+}
+.registrar-JS .content::before{
+    /*animation: slideout 3s;*/
+    z-index: 12;
+
+
+}
+.registrar-JS .first-content .first-column{
+z-index: 13;
+}
+.registrar-JS .first-content .second-column{
+z-index: 11;
+}
+.registrar-JS .second-content .first-column{
+z-index: -1;
+}
+.registrar-JS .second-content .second-column{
+z-index: -1;
+position: relative;
+/*animation: deslocamentodir 1.3s;*/
+}
+
+
+/*ANIMAÇÃO CSS-mudanças dos conteúdos
+@keyframes slidein{
+    0%{
+        left: 0;
+        width: 40%;
+
+
+    }
+    25%{
+        left: 5%;
+        width: 50%;
+
+
+    }
+    50%{
+        left: 25%;
+        width:60%;
+
+
+
+
+    }
+    75%{
+        left: 45%;
+        width: 50%;
+   
+
+
+    }
+    100%{
+        left: 60%;
+        width: 40%;
+
+
+    }
+
+
+}
+@keyframes slideout{
+    0%{
+        left: 60;
+        width: 40%;
+
+
+    }
+    25%{
+        left: 45%;
+        width: 50%;
+
+
+    }
+    50%{
+        left: 25%;
+        width:60%;
+
+
+
+
+    }
+    75%{
+        left: 5%;
+        width: 50%;
+   
+
+
+    }
+    100%{
+        left: 0%;
+        width: 40%;
+
+
+    }
+
+
+}
+@keyframes deslocamentoesq{
+    from{
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+    25%{
+        left: -80px;
+        opacity: .5;
+
+
+    }
+    50%{
+        left: -100px;
+        opacity: .2;
+
+
+    }
+    to{
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+
+
+}
+@keyframes deslocamentodir{
+    from{
+        left: 0;
+        z-index: 12;
+    }
+    25%{
+        left: 80px;
+       
+
+
+    }
+    50%{
+        left: 100px;
+       
+
+
+    }
+    to{
+        left: 110px;
+        z-index: -1;
+    }
+
+
+}*/
